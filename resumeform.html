@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Builder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="date"], select, textarea {
+            width: 100%;
+            height: 40px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        input[type="file"] {
+            margin-bottom: 20px;
+        }
+        input[type="checkbox"] {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Resume Form</h2>
+
+        <!-- Personal Details -->
+        <h3>Personal Details</h3>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+        <label for="dateOfBirth">Date of Birth:</label>
+        <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="maritalStatus">Marital Status:</label>
+        <select id="maritalStatus" name="maritalStatus" required>
+            <option value="">Select</option>
+            <option value="single">Single</option>
+            <option value="married">Married</option>
+            <option value="divorced">Divorced</option>
+        </select>
+
+        <label for="nationality">Nationality:</label>
+        <input type="text" id="nationality" name="nationality" required>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+
+        <!-- Social Media Profiles -->
+        <h3>Social Media Profiles</h3>
+        <label for="linkedinProfile">LinkedIn Profile URL:</label>
+        <input type="text" id="linkedinProfile" name="linkedinProfile">
+
+        <label for="githubProfile">GitHub Profile URL:</label>
+        <input type="text" id="githubProfile" name="githubProfile">
+
+        <!-- Uploads -->
+        <h3>Uploads</h3>
+        <label for="profilePhoto">Upload Profile Photo:</label>
+        <input type="file" id="profilePhoto" name="profilePhoto" accept="image/*">
+
+        <label for="resume">Upload Resume (PDF only):</label>
+        <input type="file" id="resume" name="resume" accept=".pdf">
+
+        <!-- Career Objective and Education -->
+        <h3>Career Objective and Education</h3>
+        <label for="careerObjective">Career Objective:</label>
+        <textarea id="careerObjective" name="careerObjective" rows="3" required></textarea>
+
+        <label for="highestQualification">Highest Qualification:</label>
+        <input type="text" id="highestQualification" name="highestQualification" required>
+
+        <label for="collegeName">Name of College / University:</label>
+        <input type="text" id="collegeName" name="collegeName" required>
+
+        <label for="yearOfGraduation">Year of Graduation:</label>
+        <input type="text" id="yearOfGraduation" name="yearOfGraduation" required>
+
+        <!-- Skills and Certifications -->
+        <h3>Skills and Certifications</h3>
+        <label for="technicalSkills">Technical Skills:</label>
+        <input type="text" id="technicalSkills" name="technicalSkills" placeholder="HTML, CSS, JS, etc." required>
+
+        <label for="
