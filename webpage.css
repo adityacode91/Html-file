@@ -1,0 +1,112 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #1e1e2f;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-link {
+    color: #f0f0f0;
+    margin: 0 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    user-select: none;
+}
+
+.nav-link:hover {
+    color: #ff4081;
+}
+
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.content {
+    color: #fff;
+    text-align: center;
+    max-width: 600px;
+}
+
+.content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+
+button {
+    background: linear-gradient(45deg, #ff4081, #ff80ab);
+    border: none;
+    padding: 15px 40px;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 64, 129, 0.6);
+    transition: background 0.3s ease, transform 0.2s ease;
+    font-weight: 600;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #ff80ab, #ff4081);
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 2.2rem;
+    }
+
+    .content p {
+        font-size: 1.1rem;
+    }
+
+    button {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+
+    .nav-link {
+        margin: 0 12px;
+        font-size: 0.9rem;
+    }
+}
