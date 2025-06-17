@@ -1,0 +1,65 @@
+/* microsoft.css */
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f6f7;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0078d4; /* Microsoft blue */
+    padding: 10px 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.left-menu, .right-menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-link {
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.nav-link i {
+    font-size: 1.1em;
+}
+
+/* Microsoft icon bigger and special */
+.left-menu .nav-link:first-child {
+    font-size: 22px !important;
+    font-weight: 700;
+}
+
+/* Hover effect */
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #e0e0e0;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px 20px;
+        gap: 15px;
+    }
+    .left-menu, .right-menu {
+        justify-content: center;
+        gap: 15px;
+    }
+}
